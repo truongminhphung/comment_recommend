@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Kết quả!</title>
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer></script>
+	<script src=" /jquery-3.3.1.min.js"></script>
+	<script src="/jquery-2.1.4.js"></script>
+	<script src="/bootstrap.js"></script>
+	<script src="/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<style>
+		.navbar {
+			border-radius: 0px;
+			margin-bottom: 0px;
+			background-color: white;
+			border: solid 2px #351111;
+		}
+
+		.navbar-brand {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		ul li {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		ul li a {
+			color: black !important;
+		}
+
+		ul li.active a {
+			color: white !important;
+			background-color: #5E6FB3 !important;
+		}
+
+		.navbar-text {
+			font-weight: bold;
+			color: black !important;
+		}
+
+		footer {
+			background: #8FC2DF !important;
+		}
+
+		h2 {
+			font-weight: bold;
+			color: #191212;
+		}
+
+		p {
+			color: #140F17;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container bg-3 text-center">
+		<h3 style="color:#caf441;font-weight:bold;">Demo Phân Tích Cảm Xúc Bình Luận Khách Hàng Phân Khúc Điện Thoại
+		</h3>
+		<hr><br>
+
+	</div><br>
+	<div class="container bg-3 text-center">
+		<div class="row">
+			<div class="col-sm-4 col-lg-3">
+				<div class="thumbnail">
+					<a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_IUH.png"></a>
+					<div class="caption">
+						<p style="font-weight: bolder;">SINH VIÊN THỰC HIỆN</p>
+						<p>Nguyễn Đăng Quang</p>
+						<p>Nguyễn Viết Nin</p>
+						<p>Nguyễn Văn Việt Toàn</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-lg-6">
+
+				<div class="col-sm-4 col-lg-12">&nbsp;
+					<div class="thumbnail">
+						<form action="{{ url_for('home')}}" method="POST">
+							<h1 style="color: red;">Nhập bình luận ở đây</h1>
+							<textarea name="comment" rows="4" cols="50"></textarea>
+							<br />
+							<input type="submit" class="btn-info" value="Dự Đoán">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-lg-3">
+				<div class="thumbnail">
+					<a href="#"><img src="https://logodix.com/logo/1769981.png"></a>
+					<div class="caption">
+						<p>Data sử dụng trên trang:</p>
+						<p>Shopee</p>
+						<p>Sendo</p>
+						<p>Lazada</p>
+						<p>Tiki</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<br><br>
+		<hr>
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="col-sm-5"> <br>
+					<p>
+					<h2>Địa CHỉ</h2>
+					</p><br>
+					<p>Khoa Học Máy Tính 13A</p><br>
+					<p>TRường Đại Học Công Nghiệp</p><br>
+
+				</div>
+				<div class="col-sm-5">
+					<h2>GIẢI ĐÁP THẮC MẮC</h2><br>
+					<p>Email: dangquanghui19@gmail.com </p><br>
+
+				</div>
+
+			</div>
+		</footer>
+</body>
+
+</html>
